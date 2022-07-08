@@ -75,7 +75,15 @@
 <hr>
 
   <h2>Google搜索</h2>
+  <form target="_blank" action="https://www.google.com.hk/search">
+    <input type="text" name="q">
+    <input hidden type="hidden" name="ie" value="UTF-8">
+    <input hidden type="hidden" name="sourceid" value="UTF">
+    <button type="submit">在新窗口打开搜索结果</button>
+  </form>
+
 <hr>
+
 <table border=1>
     <col>
     <col bgcolor=red>
@@ -119,9 +127,65 @@
 
 <from action="">
   <p>个人调查信息表</p>
-  <d1>
+  <dl>
+    <dt>性别</dt>
+    <dd>
+      <label><input type="radio" name="gender" value="male"> 男</label>
+      <label><input type="radio" name="gender" value="female"> 女</label>
+    </dd>
 
-  </d1>
+    <dt>年龄</dt>
+    <dd>
+      <select>
+        <optgroup label="少年">
+          <option value="1-6">1到6岁</option>
+          <option value="6-12">6到12岁</option>
+        </optgroup>
+        <optgroup label="青年">
+          <option value="13-15">13到15岁</option>
+          <option value="16-18">16到18岁</option>
+        </optgroup>
+        <optgroup label="少年">
+          <option value="1-6">1到6岁</option>
+          <option value="6-12">6到12岁</option>
+        </optgroup>
+      </select>
+    </dd>
+
+    <dt>生日</dt>
+    <dd>
+      <input type="date" value="2021-11-04" name="birthday">
+    </dd>
+
+    <dt>生辰</dt>
+    <dd>
+      <input type="time" name="birthtime">
+    </dd>
+
+    <dt>照片</dt>
+    <dd>
+      <input hidden type="file" name="avatar" id="avatar-upload">
+      <label for="avatar-upload">点我上传照片，我比文件上传按钮好看</label>
+    </dd>
+
+    <dt>自我介绍</dt>
+    <dd>
+      <textarea name="intro" cols="20" rows="10">&lt;/textarea></textarea>
+    </dd>
+  </dl>
+
+  <fieldset disabled>
+    <legend>这里全部禁用了</legend>
+    <input type="text" name="">
+    <input type="text" name="">
+    <input type="text" name="">
+    <input type="text" name="">
+  </fieldset>
+
+  <button>提交</button>
+  <button type="reset">重置</button>
+  <button type="button">点击无效</button>
+</form>
 
 </from>
 <hr>
