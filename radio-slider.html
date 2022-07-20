@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      position: relative;
+      width: 400px;
+      height: 300px;
+    }
+    div img {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transform: 1s;
+      position: absolute;
+    }
+
+    input:nth-child(1):checked ~ div img:nth-child(1),
+    input:nth-child(2):checked ~ div img:nth-child(2),
+    input:nth-child(3):checked ~ div img:nth-child(3),
+    input:nth-child(4):checked ~ div img:nth-child(4) {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <section>
+
+  <input type="radio" name="1">
+  <input type="radio" name="1">
+  <input type="radio" name="1">
+  <input type="radio" name="1">
+
+  <div>
+    <img src="https://travel.12306.cn/imgs/resources/uploadfiles/images/507cc19e-c721-4636-b9da-ef2308be7923_destination_W480_H320.jpg" alt="">
+    <img src="https://travel.12306.cn/imgs/resources/uploadfiles/images/331425f3-fdd0-46f7-8327-fd06c7c27970_destination_W480_H320.jpg" alt="">
+    <img src="https://travel.12306.cn/imgs/resources/uploadfiles/images/195898c6-b3e4-467b-a75b-53103001d1b6_destination_W480_H320.jpg" alt="">
+    <img src="https://travel.12306.cn/imgs/resources/uploadfiles/images/1036b559-cd35-4741-a1f9-d8bbbbf6f241_destination_W480_H320.jpg" alt="">
+  </div>
+
+  </section>
+</body>
+</html>
