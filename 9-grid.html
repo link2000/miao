@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    table {
+      width: 170px;
+      border-spacing: 0;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    tr,col {
+      border: 5px solid blue;
+    }
+
+    tr {
+      width: 50px;
+      height: 50px;
+    }
+
+    td:hover {
+      border: 5px solid red;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      width: 170px;
+      margin: auto;
+      background-color: white;
+      border: 2px solid;
+      overflow: hidden;
+      padding-bottom: 5px;
+    }
+
+    ul li {
+      width: 50px;
+      height: 50px;
+      border: 5px solid blue;
+      margin: 0 -5px -5px 0;
+      float: left;
+      position: relative;
+    }
+
+    ul li:hover {
+      border: 5px solid red;
+      z-index: 8;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tbody>
+      <col>
+      <col>
+      <col>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul>
+</body>
+</html>
