@@ -494,9 +494,6 @@
     console.log('无解')
   }
 
-
-
-
 </script>
 
 <script type="x" id="ch0104/21">
@@ -1363,6 +1360,12 @@ for (var i = 0;i < n; i++) {
       if (i % j == 0) {
         prime = false
         break
+      }
+    }
+    if (prime) {
+      count++
+      if (count == n) {
+        console.log(i)
       }
     }
   }
