@@ -29,7 +29,7 @@ var link2000 = {
     var ary1 = []
 
     for (var i = 0; i < array.length; i++) {
-      if (array[i] == false || array[i] == null || array[i] == 0 || array[i] == "" || undefined) {
+      if (array[i] == false || array[i] == null || array[i] == 0 || array[i] == "" || array[i] == undefined || array[i] == NaN) {
          ary.push(array[i])
       } else {
         ary1.push(array[i])
