@@ -37,17 +37,11 @@ var link2000 = {
 
   drop: function (array, n = 1) {
     var ary = []
-    var ary1 = []
 
-    for (var i = 0; i < array.length; i++) {
-      if (n > array.length) {
-         return ary
-      } else {
-        i = n
-        ary1.push(array[i])
-       }
+    for (var i = n; i < array.length; i++) {
+      ary.push(array[i])
     }
-    return ary1
+    return ary
   },
 
   fill: function() {},
