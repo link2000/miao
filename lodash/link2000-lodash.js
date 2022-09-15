@@ -26,16 +26,13 @@ var link2000 = {
 
   compact: function (array) {
     var ary = []
-    var ary1 = []
 
     for (var i = 0; i < array.length; i++) {
-      if (array[i] == false || array[i] == null || array[i] == 0 || array[i] == "" || array[i] == undefined || array[i] == NaN) {
-         ary.push(array[i])
-      } else {
-        ary1.push(array[i])
+      if (array[i]) {
+         ary.push(ary)
       }
     }
-    return ary1
+    return ary
   },
 
   fill: function() {},
