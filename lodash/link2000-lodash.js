@@ -44,7 +44,7 @@ var link2000 = {
          return ary
       } else {
         i = n
-        ary1.push(array1[i])
+        ary1.push(array[i])
        }
     }
     return ary1
