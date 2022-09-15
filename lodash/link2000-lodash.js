@@ -35,5 +35,20 @@ var link2000 = {
     return ary
   },
 
+  drop: function (array, n = 1) {
+    var ary = []
+    var ary1 = []
+
+    for (var i = 0; i < array.length; i++) {
+      if (n > array.length) {
+         return ary
+      } else {
+        i = n
+        ary1.push(ary1[i])
+       }
+    }
+    return ary1
+  },
+
   fill: function() {},
 }
