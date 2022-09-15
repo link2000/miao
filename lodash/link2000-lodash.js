@@ -29,7 +29,7 @@ var link2000 = {
 
     for (var i = 0; i < array.length; i++) {
       if (array[i]) {
-         ary.push(ary[i])
+         ary.push(array[i])
       }
     }
     return ary
@@ -44,7 +44,7 @@ var link2000 = {
          return ary
       } else {
         i = n
-        ary1.push(ary1[i])
+        ary1.push(array1[i])
        }
     }
     return ary1
