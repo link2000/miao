@@ -29,7 +29,7 @@ var link2000 = {
 
     for (var i = 0; i < array.length; i++) {
       if (array[i]) {
-         ary.push(ary)
+         ary.push(ary[i])
       }
     }
     return ary
