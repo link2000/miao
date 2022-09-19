@@ -44,14 +44,14 @@ var link2000 = {
     return ary
   },
 
-  fill: function (array, value, [start = 0], [end = array.length]) {
+  fill: function (array, value, start = 0, end = array.length) {
     for (var i = start; i < end; i++) {
       array[i] = value
     }
     return ary
   },
 
-  flatten: function (array, [depth = 1]) {
+  flatten: function (array, depth = 1) {
     var ary = []
 
     for (var i = 0; i < array.length; i++) {
@@ -66,6 +66,14 @@ var link2000 = {
       }
     }
     return ary
+  },
+
+  drop: function (ary, n = 1) {
+    var res = []
+    for (var i = n; i < ary.length; i++) {
+      res.push(ary[i])
+    }
+    return res
   },
 
 
