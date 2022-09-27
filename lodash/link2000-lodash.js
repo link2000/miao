@@ -76,5 +76,45 @@ var link2000 = {
     return res
   },
 
+  flattenDeep: function (array, depth = 1) {
+    var ary = []
+
+    for (var i = 0; i < array.length; i++) {
+      var ary1 = array[i]
+      if (Array.isArray(array[i])) {
+        var flattenary1 = flattenDeep(ary1)
+
+        for (var j = 0; j < flattenary1.length; j++) {
+          ary.push(flattenary1[j])
+        }
+      } else {
+        ary.push(ary1)
+      }
+    }
+    return ary
+  },
+
+  flattenDepth: function (array, depth = 1) {
+    if (depth == 0) {
+      return array.slice()
+    }
+    var ary = []
+
+    for (var i = 0; i < array.length; i++) {
+      var ary1 = array[i]
+      if (Array.isArray(array[i])) {
+        var flattenary1 = flattenDepth(ary1,depth - 1)
+
+        for (var j = 0; j < flattenary1.length; j++) {
+          ary.push(flattenary1[j])
+        }
+      } else {
+        ary.push(ary1)
+      }
+    }
+    return ary
+  },
+
+
 
 }
