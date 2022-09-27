@@ -44,9 +44,9 @@ var link2000 = {
     return ary
   },
 
-  fill: function (array, value, start = 0, end = array.length) {
+  fill: function (ary, value, start = 0, end = ary.length) {
     for (var i = start; i < end; i++) {
-      array[i] = value
+      ary[i] = value
     }
     return ary
   },
