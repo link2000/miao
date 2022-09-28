@@ -85,10 +85,10 @@ var link2000 = {
         var flattenItem = flattenDeep(item)
 
         for (var j = 0; j < flattenItem.length; j++) {
-          ary.push(flattenary1[j])
+          result.push(flattenary1[j])
         }
       } else {
-        ary.push(item)
+        result.push(item)
       }
     }
     return result
