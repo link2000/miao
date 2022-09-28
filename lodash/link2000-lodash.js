@@ -81,7 +81,7 @@ var link2000 = {
 
     for (var i = 0; i < array.length; i++) {
       var ary1 = array[i]
-      if (Array.isArray(array[i])) {
+      if (Array.isArray(ary1[i])) {
         var flattenary1 = flattenDeep(ary1)
 
         for (var j = 0; j < flattenary1.length; j++) {
@@ -102,7 +102,7 @@ var link2000 = {
 
     for (var i = 0; i < array.length; i++) {
       var ary1 = array[i]
-      if (Array.isArray(array[i])) {
+      if (Array.isArray(ary1[i])) {
         var flattenary1 = flattenDepth(ary1,depth - 1)
 
         for (var j = 0; j < flattenary1.length; j++) {
