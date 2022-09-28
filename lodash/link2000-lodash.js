@@ -76,22 +76,22 @@ var link2000 = {
     return res
   },
 
-  flattenDeep: function (array, depth = 1) {
-    var ary = []
+  flattenDeep: function (array) {
+    var result = []
 
     for (var i = 0; i < array.length; i++) {
-      var ary1 = array[i]
-      if (Array.isArray(ary1)) {
-        var flattenary1 = flattenDeep(ary1)
+      var item = array[i]
+      if (Array.isArray(item)) {
+        var flattenItem = flattenDeep(item)
 
-        for (var j = 0; j < flattenary1.length; j++) {
+        for (var j = 0; j < flattenItem.length; j++) {
           ary.push(flattenary1[j])
         }
       } else {
-        ary.push(ary1)
+        ary.push(item)
       }
     }
-    return ary
+    return result
   },
 
   flattenDepth: function (array, depth = 1) {
